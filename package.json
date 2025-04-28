@@ -4,7 +4,11 @@
   "description": "Curso 'Cypress, do Zero à Nuvem' da Escola Talking About Testing.",
   "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "test": "cypress run",
+    "lint": "eslint cypress/",
+    "lint:fix": "eslint cypress/ --fix",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -21,5 +25,15 @@
   ],
   "author": "Walmyr <wlsf82@gmail.com> (https://walmyr.dev/)",
   "license": "MIT",
-  "homepage": "https://github.com/wlsf82/cypress-do-zero-a-nuvem#readme"
+  "homepage": "https://github.com/wlsf82/cypress-do-zero-a-nuvem#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@faker-js/faker": "^9.7.0",
+    "cypress": "^13.12.0",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-cypress": "^4.3.0",
+    "eslint-plugin-prettier": "^5.2.6",
+    "prettier": "^3.5.3"
+  }
 }
