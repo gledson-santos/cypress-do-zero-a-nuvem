@@ -4,4 +4,3 @@ cypress/downloads/
 cypress/screenshots/
 cypress/videos/
 eslint.config.js
-package-lock.json
