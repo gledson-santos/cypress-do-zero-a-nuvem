@@ -8,7 +8,8 @@
     "test": "cypress run",
     "lint": "eslint cypress/",
     "lint:fix": "eslint cypress/ --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test:cloud": "cypress run --record"
   },
   "repository": {
     "type": "git",
